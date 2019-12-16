@@ -4,7 +4,7 @@ LightMemo - is a set of tools to improve perfomanse of your JavaScript applicati
 
 Memoization - is storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 
-######**How to use?**
+###### **How to use?**
 
 ```
   import { memoize } from 'lightmemo';
@@ -25,7 +25,7 @@ Memoization - is storing the results of expensive function calls and returning t
 ```
 
 
-######**What it does for you?**
+###### **What it does for you?**
 
 In example above we wrote powFunc, that does some logic, but as you may know, executing Array.prototype.map creates new array. But powMemoized takes that as a argument and stores result of exectuting and return it when powMemoized calls again with no arguments changed. Let see it in example:
 
