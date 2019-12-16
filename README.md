@@ -6,7 +6,7 @@ Memoization - is storing the results of expensive function calls and returning t
 
 ######**How to use?**
 
-`
+```
   import { memoize } from 'lightmemo';
   
   
@@ -22,14 +22,14 @@ Memoization - is storing the results of expensive function calls and returning t
   
   
   console.log(memoizedArray); // [1, 4, 9];
-`
+```
 
 
 ######**What it does for you?**
 
 In example above we wrote powFunc, that does some logic, but as you may know, executing Array.prototype.map creates new array. But powMemoized takes that as a argument and stores result of exectuting and return it when powMemoized calls again with no arguments changed. Let see it in example:
 
-`
+```
   import { memoize } from 'lightmemo';
   
   
@@ -54,7 +54,7 @@ In example above we wrote powFunc, that does some logic, but as you may know, ex
   
   console.log(powMemoized(mockArr2)) // [4, 16, 81]
   
-`
+```
 
 As you see, if powMemoized takes agruments that didn't change it returns previous result. **AND WHAT'S MORE IMPORTANT: it doesn't execute powFunc at all**, that means you don't execute expensive code if result will be same.
 
